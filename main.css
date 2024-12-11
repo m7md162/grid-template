@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-gray);
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  margin: 5rem;
+}
+h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+p {
+  font-size: 13px;
+  color: var(--Light-gray);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+article {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.5;
+  box-shadow: 4px 4px 10px 0px var(--Very-dark-grayish-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.personal {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.one {
+  background-color: var(--Moderate-violet);
+  grid-column: 1 / span 2;
+}
+.one h3 {
+  color: var(--White);
+}
+
+.two {
+  background-color: var(--Very-dark-grayish-blue);
+  grid-column: 3/4;
+  color: var(--Light-grayish-blue);
+}
+.two h3 {
+  color: var(--White);
+}
+.three {
+  background-color: var(--White);
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.four {
+  background-color: var(--Very-dark-blackish-blue);
+  grid-row: 2/3;
+  grid-column: 2/4;
+  color: var(--Light-grayish-blue);
+}
+.four h3 {
+  color: var(--White);
+}
+.five {
+  background-color: var(--White);
+  grid-row: 1 / span 2;
+  grid-column: 5/6;
+}
